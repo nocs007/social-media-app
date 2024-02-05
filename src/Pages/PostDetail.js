@@ -72,7 +72,7 @@ const PostDetail = () => {
           <p>More Post</p>
           <div className="container grid grid-cols-3  max-md:grid-cols-2 max-sm:grid-cols-1 flex gap-10 flex-wrap ">
             {posts.map((post) => {
-              if (post.id != openPost.id) {
+              if (post.id !== openPost.id) {
                 return <Post post={post} key={post.id} />;
               }
             })}
